@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+li{list-style:none;}
+/*  top_header on index.php page start  */
+#top_header{
+	width:100%;
+	height:100vh;
+	background-image:url('../image/Purplin.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#navbar{
+    border-radius: 2rem;
+    background: white;
+    padding: 0.8rem;
+    z-index:43;
+    width: 86%;
+    left: 7%;
+    position: absolute;
+	top: 20px;
+}
+#header_form_div{
+    position:absolute;
+    top:50%;
+    left:50%;
+	z-index:20;
+    transform:translate(-50%,-50%);
+}
+#header_form_div form{
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    width:50%;
+	margin-left:25%;
+}
+#header_form_div form input[type=text]{
+    width:85%;
+    height:40px;
+    border:none;
+}
+/*  top_header on index.php page start  */
+
+
+/* *** Hostel section Start ****/
+.hostel{
+	width:100%;
+	height:100vh;
+	padding:50px;
+	position:relative;
+}
+.hostel:before{
+	content:"";
+	position:absolute;
+	top:0%;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:-1;
+	background:linear-gradient(160deg,#16c9f6 55%, #fff 0%);
+}
+.money{
+	font-size:40px;
+	line-height:1;
+	color:#606060;
+}
+.card{
+	transition: 0.4s ease;
+}
+.card-header{
+	font-size:1.6rem;
+	font-weight:bold;
+	background:#fff;
+	padding:25px 9px !important;
+}
+.card-body{
+	padding:30px 0px !important;
+}
+.card-footer{
+	background:#fff;
+	padding:30px 0px !important;
+}
+.card-footer a{
+	border:1px solid #50d1c0;
+	border-radius: 100px;
+	margin:0 5px;
+	padding:12px 35px;
+	outline:none;
+	color:#50d1c0;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.4;
+	text-align:center;
+}
+.card:hover .card-footer a{
+	background:#50d1c0;
+	color:#fff;
+	text-decoration:none;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover{
+	transform:translateY(-20px);
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover .money,.card:hover .card-header{
+	color:#50d1c0;
+}
+/* *** hostel section end ****/
+
+
+
+/* *** happy client section start ****/
+.happyclients{
+	width:100%;
+	height:100vh;
+	padding:80px 0px;
+}
+.box{
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+	text-align:center;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius:2px;
+	transition:0.3s ease;
+}
+.box:hover{
+	background:#16c9f6;
+}
+.box:hover p{
+	color:white;
+}
+.carousel-indicators{
+	position:absolute;
+	right:0px;
+	bottom:-60px;
+}
+.carousel-indicators li{
+	background-color:#16c9f6;
+}
+.box a{
+	position:relative;
+}
+.box a img{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	margin-top:50px;
+}
+.box a:after{
+	content:"\f10d";
+	font-family:fontawesome;
+	width:40px;
+	height:40px;
+	background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+	position:absolute;
+	color:white;
+	top:120%;
+	left:70%;
+	border-radius:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.box h1{
+	font-size:18px;
+	font-weight:700px;
+	color:#000;
+	margin-bottom:10px;
+}
+.box h2{
+	font-size:13px;
+	font-weight:400px;
+	color:#66666;
+	margin-bottom:20px;
+}
+/* *** happy client end ****/
+
+
+
+/* *** Contact us start ****/
+.contactus{
+	width:100%;
+	height:100vh;
+	padding:80px 0px;
+	position:relative;
+}
+.contactus:before{
+	content:"";
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:-1;
+	background:linear-gradient(330deg, #16c9f6 55%,#fff 0%);
+}
+.form-button button{
+	border:1px solid #50d1c0;
+	border-radius: 100px;
+	margin:0 5px;
+	padding:12px 35px;
+	outline:none;
+	color:#50d1c0;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.4;
+	text-align:center;
+	background:transparent;
+}
+form:hover .form-button button{
+	background:#fff;
+	color:#50d1c0;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3)
+}
+.form-button button:hover{
+	color:#50d1c0;
+}
+::placeholder{
+	font-size:0.85rem;
+}
+/* *** Contact us end ****/
+
+
+/* footer section start*/
+footer {
+  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  padding-top: 30px;
+}
+
+footer .social {
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer .social li {
+  margin: 0px 10px;
+  display: inline-block;
+}
+
+footer .social li a {
+  color: #9d5bd9;
+   text-align: center;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer .social li a:hover {
+  background-color: black;
+  color: #fff;
+}
+
+footer .copyright {
+  text-align: center;
+  border-top: 1px solid rgba(250,250,250,0.2);
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.88px;
+  text-transform: uppercase;
+}
+/* *** footer section end ****/
+/* *** media query start ****/
+@media(max-width:768px){
+	.nav-item{
+		text-align:center !important;
+	}
+	.happyclients,.hostel,.contactus{
+		height:auto;
+		margin-top:50px;
+	}
+}
+/* *** media query end ****/

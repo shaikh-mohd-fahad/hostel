@@ -1,0 +1,14 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+/***** index.php/ dashboard page start ****/
+#cardd .card-body a:hover{
+	text-decoration:none;
+}
+#cardd{
+	max-width:280px;
+}
+/***** index.php/ dashboard page start ****/
+
